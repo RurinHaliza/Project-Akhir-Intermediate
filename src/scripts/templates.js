@@ -34,11 +34,11 @@ export function pushNotificationContainerTemplate() {
 export function generateAuthenticatedNavigationListTemplate(isSubscribed) {
   return `
     <ul id="nav-list" class="nav-list">
-      <li><a href="#/" class="nav-link">Beranda</a></li>
-      <li><a href="#/story" class="nav-link">Create Story</a></li>
-      <li><a href="#/list-story" class="nav-link">List Story</a></li>
-      <li><a href="#/story-favorite" class="nav-link">Story Favorite</a></li>
-      <li><a href="#/logout" class="nav-link">Logout</a></li>
+      <li><a href="#/" class="nav-link"><i class="fas fa-home"></i> Beranda</a></li>
+      <li><a href="#/story" class="nav-link"><i class="fas fa-plus-circle"></i> Create Story</a></li>
+      <li><a href="#/list-story" class="nav-link"><i class="fas fa-list"></i> List Story</a></li>
+      <li><a href="#/story-favorite" class="nav-link"><i class="fa-solid fa-heart"></i> Story Favorite</a></li>
+      <li><a href="#/logout" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
       <li>
         ${
           isSubscribed
@@ -68,10 +68,10 @@ export function generateAuthenticatedNavigationListTemplate(isSubscribed) {
 export function generateUnauthenticatedNavigationListTemplate() {
   return `
     <ul id="nav-list" class="nav-list">
-      <li><a href="#/" class="nav-link" data-route="/">Beranda</a></li>
-      <li><a href="#/story" class="nav-link" data-route="/story">Create Story</a></li>
-      <li><a href="#/list-story" class="nav-link" data-route="/list-story">List Story</a></li>
-      <li><a href="#/story-favorite" class="nav-link" data-route="/story-favorite">Story Favorite</a></li>
+      <li><a href="#/" class="nav-link" data-route="/"><i class="fas fa-home"></i> Beranda</a></li>
+      <li><a href="#/story" class="nav-link" data-route="/story"><i class="fas fa-plus-circle"></i> Create Story</a></li>
+      <li><a href="#/list-story" class="nav-link" data-route="/list-story"><i class="fas fa-list"></i> List Story</a></li>
+      <li><a href="#/story-favorite" class="nav-link" data-route="/story-favorite"><i class="fa-solid fa-heart"></i> Story Favorite</a></li>
       <li><a href="#/login" class="nav-link" id="loginLink" data-route="/login">Login</a></li>
       <li><a href="#/register" class="nav-link" id="registerLink" data-route="/register">Register</a></li>
     </ul>
